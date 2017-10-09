@@ -4,7 +4,7 @@ namespace Etbusch\PostgresCtes;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Connection;
-use Illuminate\Database\Builder;
+use Illuminate\Database\Query\Builder;
 use Etbusch\PostgresCtes\PostgresCteConnection;
 
 class PostgresCtesServiceProvider extends ServiceProvider
