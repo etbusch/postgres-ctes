@@ -1,0 +1,15 @@
+{
+    "name": "etbusch/postgres-ctes",
+    "description": "Laravel addon to provide native support for PostgresSQL Common Table Expressions in Eloquent's query builder.",
+    "type": "package",
+    "require": {
+        "php": ">=5.6"
+    },
+    "authors": [
+        {
+            "name": "Eric Busch",
+            "email": "eric@altdetroit.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
