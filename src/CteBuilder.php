@@ -16,9 +16,9 @@ class CteBuilder extends BaseBuilder
      * @param  \Illuminate\Database\Query\Processors\Processor  $processor
      * @return void
      */
-    public function __construct(ConnectionInterface $connection,
+    public function __construct(\Illuminate\Database\ConnectionInterface $connection,
                                 Grammar $grammar = null,
-                                Processor $processor = null)
+                                \Illuminate\Database\Query\Processor $processor = null)
     {
         $this->connection = $connection;
         $this->grammar = $grammar ?: $connection->getQueryGrammar();
