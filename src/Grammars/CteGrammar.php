@@ -6,6 +6,7 @@ use Illuminate\Database\Query\Grammars\Grammar as BaseGrammar;
 
 class CteGrammar extends BaseGrammar
 {
+    
     /**
      * The components that make up a select clause.
      *

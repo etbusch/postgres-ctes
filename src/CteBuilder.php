@@ -3,9 +3,28 @@
 namespace Etbusch\PostgresCtes;
 
 use Illuminate\Database\Query\Builder as BaseBuilder;
+use Etbusch\PostgresCtes\Grammars\CteGrammar as Grammar;
 
 class CteBuilder extends BaseBuilder
 {
+
+    /**
+     * Create a new query builder instance.
+     *
+     * @param  \Illuminate\Database\ConnectionInterface  $connection
+     * @param  \Illuminate\Database\Query\Grammars\Grammar  $grammar
+     * @param  \Illuminate\Database\Query\Processors\Processor  $processor
+     * @return void
+     */
+    public function __construct(ConnectionInterface $connection,
+                                Grammar $grammar = null,
+                                Processor $processor = null)
+    {
+        $this->connection = $connection;
+        $this->grammar = $grammar ?: $connection->getQueryGrammar();
+        $this->processor = $processor ?: $connection->getPostProcessor();
+    }
+
     /**
      * The current query value bindings.
      *
