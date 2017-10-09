@@ -2,6 +2,7 @@
 
 namespace Etbusch\PostgresCtes\Grammars;
 
+use Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Grammars\PostgresGrammar as BasePostgresGrammar;
 
 class PostgresCteGrammar extends BasePostgresGrammar
