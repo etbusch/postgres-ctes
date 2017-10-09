@@ -2,12 +2,12 @@
 
 namespace Etbusch\PostgresCtes\Grammars;
 
-use Illuminate\Database\Query\Grammars\Grammar as BaseGrammar;
+use Illuminate\Database\Query\Grammars\PostgresGrammar as BasePostgresGrammar;
 
-class CteGrammar extends BaseGrammar
+class PostgresCteGrammar extends BasePostgresGrammar
 {
-    
-    /**
+
+     /**
      * The components that make up a select clause.
      *
      * @var array
