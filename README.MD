@@ -5,7 +5,9 @@ This package adds Common Table Expression support to the base PostgresSQL driver
 
 ## Install
 
-Via Composer and local git repository:
+####Via Composer and local git repository:
+
+Clone the repository to a local directory on your server/workstation.
 
 Add the following to your app's composer.json:
 
