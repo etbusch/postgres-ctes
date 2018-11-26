@@ -23,6 +23,14 @@ Then run:
 $ composer require etbusch\postgres-ctes
 ```
 
+#### Via Composer and Packagist
+
+Simply run:
+
+``` bash
+$ composer require etbusch\postgres-ctes
+```
+
 Once composer has been updated and the package has been installed, the service provider will need to be loaded.
 
 
