@@ -33,8 +33,9 @@ $ composer require etbusch\postgres-ctes
 
 Once composer has been updated and the package has been installed, the service provider will need to be loaded.
 
+For Lavavel 5.5+, the package will autodiscover the needed service provider, so no additional steps are necessary.
 
-For Laravel 5.4+, open `config/app.php` and add following line to the providers array:
+For Laravel 5.4, open `config/app.php` and add following line to the providers array:
 ``` php
 Etbusch\PostgresCtes\PostgresCtesServiceProvider::class,
 ```
